@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 
-    <title>About Me</title>
+    <title>Contact</title>
 
     <!-- Bootstrap core CSS -->
     <!-- Latest compiled and minified CSS -->
@@ -17,6 +17,7 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
+
     <style>
         #masthead {
             background: #fff;
@@ -25,7 +26,7 @@
             color: #fff;
             overflow: auto;
             border-bottom: 2px solid #ccc;
-            *position: fixed;
+            position: fixed;
             width: 100%;
         }
 
@@ -38,7 +39,7 @@
         }
 
         .bg-4 {
-            background-color: #2f2f2f;
+            background-color: #666;
             color: #fff;
             border-top: 8px solid #4aaaa5;
             color: #ccc;
@@ -61,15 +62,101 @@
             font-weight: 700;
             font-size: 30px;
             text-decoration: none;
-
         }
 
-        .auth-image {
-            width: 200px;
-            height: auto;
-            margin-top: 10px;
-            float: left;
-            margin-right: 25px
+
+        /* For Desktop: */
+
+        @media only screen and(max-width: 980px) {}
+
+        nav {
+            float: right;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* For Table: */
+
+        @media only screen and (max-width: 768px) {
+            .sidebar {
+                background: #fff;
+                padding: 30px;
+                width: 100%;
+                max-width: 748px;
+                float: left;
+                border: 1px solid #ddd;
+                margin-bottom: 20px;
+            }
+
+            #logo {
+                width: 768px;
+                height: 90px;
+                background: #4aaaa5;
+                float: left;
+                font-family: 'Georgia', Times, Times New Roman, serif;
+                text-align: center;
+                line-height: 90px;
+                color: #fff;
+                font-weight: 700;
+                font-size: 30px;
+            }
+            nav {
+                float: left;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                max-width: 768px;
+            }
+        }
+
+        /* For Phone in Landscape */
+
+        @media only screen and (max-width: 640px) {
+            .container {
+                max-width: 600px;
+            }
+            #masthead {
+                max-width: 600px;
+            }
+            .main-section {
+                max-width: 600px;
+            }
+            .sidebar {
+                background: #fff;
+                padding: 30px;
+                width: 100%;
+                max-width: 600px;
+                float: left;
+                border: 1px solid #ddd;
+                margin-bottom: 20px;
+            }
+            #logo {
+                width: 600px;
+                height: 90px;
+                background: #4aaaa5;
+                float: left;
+                font-family: 'Georgia', Times, Times New Roman, serif;
+                text-align: center;
+                line-height: 90px;
+                color: #fff;
+                font-weight: 700;
+                font-size: 30px;
+            }
+            nav {
+                float: left;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                max-width: 600px;
+            }
+            nav a {
+                color: #999;
+                text-decoration: none;
+                margin-left: 75px;
+                display: inline-block;
+                border-left: 1px solid #efefef;
+                padding-left: 15px;
+                line-height: 18px;
+                max-width: 600px;
+            }
         }
     </style>
 </head>
@@ -80,17 +167,19 @@
             <div class="navbar-header">
                 <a class="vertical-align:middle text-muted" id="logo">Reinaldo Llano, Jr.</a>
             </div>
-            <ul class="nav nav-pills pull-right" vertical-aling="center">
-                <li role="presentation " class="active ">
-                    <a href="index.html ">About</a>
-                </li>
-                <li role="presentation ">
-                    <a href="portfolio.html ">Portfolio</a>
-                </li>
-                <li role="presentation ">
-                    <a href="contact.html ">Contact</a>
-                </li>
-            </ul>
+            <nav>
+                <ul class="nav nav-pills pull-right" vertical-aling="center">
+                    <li role="presentation " class="active ">
+                        <a href="index.html ">About</a>
+                    </li>
+                    <li role="presentation ">
+                        <a href="portfolio.html ">Portfolio</a>
+                    </li>
+                    <li role="presentation ">
+                        <a href="contact.html ">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 

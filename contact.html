@@ -63,6 +63,101 @@
             font-size: 30px;
             text-decoration: none;
         }
+
+
+        /* For Desktop: */
+
+        @media only screen and(max-width: 980px) {}
+
+        nav {
+            float: right;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* For Table: */
+
+        @media only screen and (max-width: 768px) {
+            .sidebar {
+                background: #fff;
+                padding: 30px;
+                width: 100%;
+                max-width: 700px;
+                float: center;
+                border: 1px solid #ddd;
+                margin-bottom: 20px;
+            }
+
+            #logo {
+                width: 768px;
+                height: 90px;
+                background: #4aaaa5;
+                float: center;
+                font-family: 'Georgia', Times, Times New Roman, serif;
+                text-align: center;
+                line-height: 90px;
+                color: #fff;
+                font-weight: 700;
+                font-size: 30px;
+            }
+            nav {
+                float: left;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                max-width: 768px;
+            }
+        }
+
+        /* For Phone in Landscape */
+
+        @media only screen and (max-width: 640px) {
+            .container {
+                max-width: 600px;
+            }
+            #masthead {
+                max-width: 600px;
+            }
+            .main-section {
+                max-width: 600px;
+            }
+            .sidebar {
+                background: #fff;
+                padding: 30px;
+                width: 100%;
+                max-width: 600px;
+                float: left;
+                border: 1px solid #ddd;
+                margin-bottom: 20px;
+            }
+            #logo {
+                width: 600px;
+                height: 90px;
+                background: #4aaaa5;
+                float: left;
+                font-family: 'Georgia', Times, Times New Roman, serif;
+                text-align: center;
+                line-height: 90px;
+                color: #fff;
+                font-weight: 700;
+                font-size: 30px;
+            }
+            nav {
+                float: left;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                max-width: 600px;
+            }
+            nav a {
+                color: #999;
+                text-decoration: none;
+                margin-left: 75px;
+                display: inline-block;
+                border-left: 1px solid #efefef;
+                padding-left: 15px;
+                line-height: 18px;
+                max-width: 600px;
+            }
+        }
     </style>
 </head>
 
@@ -72,17 +167,19 @@
             <div class="navbar-header">
                 <a class="vertical-align:middle text-muted" id="logo">Reinaldo Llano, Jr.</a>
             </div>
-            <ul class="nav nav-pills pull-right ">
-                <li role="presentation ">
-                    <a href="index.html ">About</a>
-                </li>
-                <li role="presentation ">
-                    <a href="portfolio.html ">Portfolio</a>
-                </li>
-                <li role="presentation " class="active ">
-                    <a href="contact.html ">Contact</a>
-                </li>
-            </ul>
+            <nav>
+                <ul class="nav nav-pills pull-right ">
+                    <li role="presentation ">
+                        <a href="index.html ">About</a>
+                    </li>
+                    <li role="presentation ">
+                        <a href="portfolio.html ">Portfolio</a>
+                    </li>
+                    <li role="presentation " class="active ">
+                        <a href="contact.html ">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -95,26 +192,26 @@
                         <h3>
                             <strong>Contact</strong>
                         </h3>
-                        <div class="page-header"></div>
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputName2 ">Name</label>
-                                <input type="text " class="form-control " id="exampleInputName2 " placeholder="John Smith ">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1 ">Email address</label>
-                                <input type="email" class="form-control " id="exampleInputEmail1 " placeholder="Email ">
-                            </div>
-                            <div class="form-group">
-                                <label for="textarea">Message</label>
-                                <textarea class="form-control " rows="3 "></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary ">Submit</button>
-                        </form>
                     </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputName2 ">Name</label>
+                            <input type="text " class="form-control " id="exampleInputName2 " placeholder="John Smith ">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1 ">Email address</label>
+                            <input type="email" class="form-control " id="exampleInputEmail1 " placeholder="Email ">
+                        </div>
+                        <div class="form-group">
+                            <label for="textarea">Message</label>
+                            <textarea class="form-control " rows="3 "></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary ">Submit</button>
+                    </form>
                 </div>
             </div>
+
 
             <div class="col-lg-4 col-md-6 col-xs-12">
                 <div class="jumbotron">
@@ -132,21 +229,20 @@
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <footer class="container-fluid bg-4 text-center ">
-        <p class="text-center ">
-            <strong>&copy; Copywright 2018 Reinaldo Llano, Jr.</strong>
-        </p>
-    </footer>
+        <footer class="container-fluid bg-4 text-center ">
+            <p class="text-center ">
+                <strong>&copy; Copywright 2018 Reinaldo Llano, Jr.</strong>
+            </p>
+        </footer>
 
-    <!-- JQuery 1.1 Script -->
-    <script src="http://code.jquery.com/jquery-1.12.4.min.js " integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-        crossorigin=" anonymous "></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa "
-        crossorigin="anonymous "></script>
+        <!-- JQuery 1.1 Script -->
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js " integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin=" anonymous "></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa "
+            crossorigin="anonymous "></script>
 </body>
 
 
